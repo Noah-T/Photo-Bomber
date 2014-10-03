@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  NATPhotoCollectionCell.h
 //  Photo Bombers
 //
 //  Created by Noah Teshu on 10/3/14.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface NATPhotoCollectionCell : UICollectionViewCell
 
+@property (strong, nonatomic)UIImageView *imageView;
 
 @end
-

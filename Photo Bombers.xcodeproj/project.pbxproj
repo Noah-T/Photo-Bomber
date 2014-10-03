@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		DEC499A119DF2A6700901376 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC499A019DF2A6700901376 /* main.m */; };
 		DEC499A419DF2A6700901376 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC499A319DF2A6700901376 /* AppDelegate.m */; };
-		DEC499A719DF2A6700901376 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC499A619DF2A6700901376 /* ViewController.m */; };
-		DEC499AA19DF2A6700901376 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEC499A819DF2A6700901376 /* Main.storyboard */; };
 		DEC499AC19DF2A6700901376 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEC499AB19DF2A6700901376 /* Images.xcassets */; };
 		DEC499AF19DF2A6700901376 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEC499AD19DF2A6700901376 /* LaunchScreen.xib */; };
 		DEC499BB19DF2A6700901376 /* Photo_BombersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC499BA19DF2A6700901376 /* Photo_BombersTests.m */; };
+		DEC499C619DF2AFA00901376 /* PhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC499C519DF2AFA00901376 /* PhotosViewController.m */; };
+		DEC499CD19DF3B4900901376 /* NATPhotoCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC499CC19DF3B4900901376 /* NATPhotoCollectionCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +32,15 @@
 		DEC499A019DF2A6700901376 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DEC499A219DF2A6700901376 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DEC499A319DF2A6700901376 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DEC499A519DF2A6700901376 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DEC499A619DF2A6700901376 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		DEC499A919DF2A6700901376 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DEC499AB19DF2A6700901376 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DEC499AE19DF2A6700901376 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		DEC499B419DF2A6700901376 /* Photo BombersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Photo BombersTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEC499B919DF2A6700901376 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEC499BA19DF2A6700901376 /* Photo_BombersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Photo_BombersTests.m; sourceTree = "<group>"; };
+		DEC499C419DF2AFA00901376 /* PhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosViewController.h; sourceTree = "<group>"; };
+		DEC499C519DF2AFA00901376 /* PhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosViewController.m; sourceTree = "<group>"; };
+		DEC499CB19DF3B4900901376 /* NATPhotoCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NATPhotoCollectionCell.h; path = ../NATPhotoCollectionCell.h; sourceTree = "<group>"; };
+		DEC499CC19DF3B4900901376 /* NATPhotoCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NATPhotoCollectionCell.m; path = ../NATPhotoCollectionCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +82,12 @@
 		DEC4999D19DF2A6700901376 /* Photo Bombers */ = {
 			isa = PBXGroup;
 			children = (
+				DEC499CB19DF3B4900901376 /* NATPhotoCollectionCell.h */,
+				DEC499CC19DF3B4900901376 /* NATPhotoCollectionCell.m */,
 				DEC499A219DF2A6700901376 /* AppDelegate.h */,
 				DEC499A319DF2A6700901376 /* AppDelegate.m */,
-				DEC499A519DF2A6700901376 /* ViewController.h */,
-				DEC499A619DF2A6700901376 /* ViewController.m */,
-				DEC499A819DF2A6700901376 /* Main.storyboard */,
+				DEC499C419DF2AFA00901376 /* PhotosViewController.h */,
+				DEC499C519DF2AFA00901376 /* PhotosViewController.m */,
 				DEC499AB19DF2A6700901376 /* Images.xcassets */,
 				DEC499AD19DF2A6700901376 /* LaunchScreen.xib */,
 				DEC4999E19DF2A6700901376 /* Supporting Files */,
@@ -199,7 +201,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEC499AA19DF2A6700901376 /* Main.storyboard in Resources */,
 				DEC499AF19DF2A6700901376 /* LaunchScreen.xib in Resources */,
 				DEC499AC19DF2A6700901376 /* Images.xcassets in Resources */,
 			);
@@ -219,8 +220,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEC499A719DF2A6700901376 /* ViewController.m in Sources */,
+				DEC499CD19DF3B4900901376 /* NATPhotoCollectionCell.m in Sources */,
 				DEC499A419DF2A6700901376 /* AppDelegate.m in Sources */,
+				DEC499C619DF2AFA00901376 /* PhotosViewController.m in Sources */,
 				DEC499A119DF2A6700901376 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,14 +246,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DEC499A819DF2A6700901376 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DEC499A919DF2A6700901376 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DEC499AD19DF2A6700901376 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (

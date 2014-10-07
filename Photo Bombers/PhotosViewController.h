@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <SimpleAuth/SimpleAuth.h>
 
 @interface PhotosViewController : UICollectionViewController
 

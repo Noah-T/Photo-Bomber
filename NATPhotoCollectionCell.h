@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <SAMCache/SAMCache.h>
 
 @interface NATPhotoCollectionCell : UICollectionViewCell
 
 @property (strong, nonatomic)UIImageView *imageView;
+@property (nonatomic)NSDictionary *photoDictionary;
 
 @end

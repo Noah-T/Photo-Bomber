@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import <SimpleAuth/SimpleAuth.h>
+#import "NATDetailViewController.h"
+#import "NATPresentDetailTransition.h"
+#import "NATDismissDetailTransition.h"
 
-@interface PhotosViewController : UICollectionViewController
+@interface PhotosViewController : UICollectionViewController <UIViewControllerTransitioningDelegate>
 
 @end

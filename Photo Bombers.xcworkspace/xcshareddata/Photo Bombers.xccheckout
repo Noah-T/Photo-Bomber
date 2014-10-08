@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>342A3DF7-3A5D-4805-848D-39BBE7C8CDC8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Photo Bombers</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>89F4ED324C6CBA9C1864A65FF692C38A5165F6F0</key>
+		<string>https://github.com/Noah-T/Photo-Bomber.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Photo Bombers.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>89F4ED324C6CBA9C1864A65FF692C38A5165F6F0</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Noah-T/Photo-Bomber.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>89F4ED324C6CBA9C1864A65FF692C38A5165F6F0</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>89F4ED324C6CBA9C1864A65FF692C38A5165F6F0</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Photo-Bombers</string>
+		</dict>
+	</array>
+</dict>
+</plist>

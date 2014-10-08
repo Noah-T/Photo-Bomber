@@ -40,15 +40,17 @@
     self.accessToken = [userDefaults objectForKey:@"accessToken"];
     
     if (self.accessToken == nil) {
-        [SimpleAuth authorize:@"instagram" completion:^(NSDictionary *responseObject, NSError *error) {
+        [SimpleAuth authorize:@"instagram" options:@{@"scope": @[@"likes"]} completion:^(NSDictionary *responseObject, NSError *error) {
             
             
             //a way to access nested data
-            NSString *accessToken = [responseObject objectForKey:@"credentials"][@"token"];
-            [userDefaults setObject:accessToken forKey:@"accessToken"];
+            self.accessToken = [responseObject objectForKey:@"credentials"][@"token"];
+            [userDefaults setObject:self.accessToken forKey:@"accessToken"];
             
             //synchronize saves everything
             [userDefaults synchronize];
+            
+            [self refresh];
         }];
         
     } else {
@@ -94,5 +96,38 @@
     cell.photoDictionary = self.photos[indexPath.row];
     return cell;
 }
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    //photoDictionary refers to the dictionary at the indexpath of whatever was selected
+    NSDictionary *photoDictionary = self.photos[indexPath.row];
+    NATDetailViewController *viewController = [[NATDetailViewController alloc]init];
+    viewController.modalPresentationStyle = UIModalPresentationCustom;
+    viewController.transitioningDelegate = self;
+    viewController.photoDictionary = photoDictionary;
+    
+    //this can be used to modally present view controllers
+    [self presentViewController:viewController animated:YES completion:nil];
+    
+    
+    
+    }
+
+
+- (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented
+                                                                  presentingController:(UIViewController *)presenting
+                                                                      sourceController:(UIViewController *)source
+{
+    //return an instance of the custom transition class
+    return [[NATPresentDetailTransition alloc]init];
+}
+
+- (id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed
+{
+    //return an instance of the custom transition class
+    return [[NATDismissDetailTransition alloc]init];
+}
+
+
 
 @end

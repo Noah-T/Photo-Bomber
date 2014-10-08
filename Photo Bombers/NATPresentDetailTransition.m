@@ -34,7 +34,7 @@
     [containerView addSubview:detail.view];
     
     //animated with duration of 0.3 seconds
-    [UIView animateWithDuration:0.3 animations:^{
+    [UIView animateWithDuration:0.5 animations:^{
         //change detail view to alpha (fading in from 0)
         detail.view.alpha = 1.0;
     } completion:^(BOOL finished) {
